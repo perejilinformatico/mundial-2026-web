@@ -1,0 +1,28 @@
+<div id="hero-container" class="flex justify-center items-center py-4 bg-white">
+    <div class="w-full">
+        <img
+            id="hero-img"
+            src="/imagen_hero.avif"
+            alt="Mundial 2026"
+            class="w-full h-[550px] object-cover bg-white shadow-xl"
+        />
+    </div>
+</div>
+
+<style>
+    #hero-img {
+        animation: heroEntrance 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        opacity: 0;
+    }
+
+    @keyframes heroEntrance {
+        from {
+            opacity: 0;
+            transform: scale(0.85) translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+</style>

@@ -1,0 +1,214 @@
+---
+const groups = [
+    { name: "Grupo A", teams: ["MEX", "RSA", "KOR", "CZE"] },
+    { name: "Grupo B", teams: ["CAN", "BIH", "QAT", "SUI"] },
+    { name: "Grupo C", teams: ["BRA", "MAR", "HAI", "SCO"] },
+    { name: "Grupo D", teams: ["USA", "PAR", "AUS", "TUR"] },
+    { name: "Grupo E", teams: ["GER", "CUW", "CIV", "ECU"] },
+    { name: "Grupo F", teams: ["NED", "JPN", "SWE", "TUN"] },
+    { name: "Grupo G", teams: ["BEL", "EGY", "IRN", "NZL"] },
+    { name: "Grupo H", teams: ["ESP", "CPV", "KSA", "URU"] },
+    { name: "Grupo I", teams: ["FRA", "SEN", "IRQ", "NOR"] },
+    { name: "Grupo J", teams: ["ARG", "ALG", "AUT", "JOR"] },
+    { name: "Grupo K", teams: ["POR", "COD", "UZB", "COL"] },
+    { name: "Grupo L", teams: ["ENG", "CRO", "GHA", "PAN"] },
+];
+---
+
+<section id="partidos" class="py-20 bg-gray-50 text-black">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-16 text-center">
+            <h2
+                class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4"
+            >
+                Calendario de <span class="text-blue-600">Partidos Clave</span>
+            </h2>
+            <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                Los momentos más esperados del torneo más grande de la historia.
+                Consulta las fechas y sedes de los encuentros principales.
+            </p>
+        </div>
+
+        <div
+            class="overflow-x-auto rounded-3xl shadow-2xl border border-gray-200 bg-white"
+        >
+            <table class="w-full text-left border-collapse">
+                <thead
+                    class="bg-black text-white uppercase text-xs sm:text-sm font-bold tracking-widest"
+                >
+                    <tr>
+                        <th class="px-6 py-5">Fecha</th>
+                        <th class="px-6 py-5">Encuentro</th>
+                        <th class="px-6 py-5">Estadio</th>
+                        <th class="px-6 py-5">Sede</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <tr
+                        class="group hover:bg-gray-50 transition-colors duration-300"
+                    >
+                        <td
+                            class="px-6 py-6 font-bold text-lg text-gray-900 whitespace-nowrap"
+                            >11 JUN 2026</td
+                        >
+                        <td class="px-6 py-6">
+                            <div class="flex items-center gap-3">
+                                <span class="font-extrabold text-blue-900"
+                                    >México vs TBD</span
+                                >
+                                <span
+                                    class="hidden sm:inline-block bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-tighter"
+                                    >Inaugural</span
+                                >
+                            </div>
+                        </td>
+                        <td class="px-6 py-6 text-gray-600 font-medium"
+                            >Estadio Azteca</td
+                        >
+                        <td class="px-6 py-6 text-gray-500 italic"
+                            >Ciudad de México, MEX</td
+                        >
+                    </tr>
+                    <tr
+                        class="group hover:bg-gray-50 transition-colors duration-300"
+                    >
+                        <td
+                            class="px-6 py-6 font-bold text-lg text-gray-900 whitespace-nowrap"
+                            >12 JUN 2026</td
+                        >
+                        <td class="px-6 py-6 font-extrabold text-blue-900"
+                            >Estados Unidos vs TBD</td
+                        >
+                        <td class="px-6 py-6 text-gray-600 font-medium"
+                            >SoFi Stadium</td
+                        >
+                        <td class="px-6 py-6 text-gray-500 italic"
+                            >Inglewood, USA</td
+                        >
+                    </tr>
+                    <tr
+                        class="group hover:bg-gray-50 transition-colors duration-300"
+                    >
+                        <td
+                            class="px-6 py-6 font-bold text-lg text-gray-900 whitespace-nowrap"
+                            >12 JUN 2026</td
+                        >
+                        <td class="px-6 py-6 font-extrabold text-blue-900"
+                            >Canadá vs TBD</td
+                        >
+                        <td class="px-6 py-6 text-gray-600 font-medium"
+                            >BC Place</td
+                        >
+                        <td class="px-6 py-6 text-gray-500 italic"
+                            >Vancouver, CAN</td
+                        >
+                    </tr>
+                    <tr
+                        class="group hover:bg-yellow-50 transition-colors duration-300"
+                    >
+                        <td
+                            class="px-6 py-6 font-black text-xl text-yellow-600 whitespace-nowrap"
+                            >19 JUL 2026</td
+                        >
+                        <td class="px-6 py-6">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="font-black text-2xl uppercase tracking-tighter text-black"
+                                    >Gran Final</span
+                                >
+                                <span
+                                    class="bg-yellow-400 text-black text-[10px] font-black px-2 py-1 rounded-full uppercase tracking-tighter animate-pulse text-center"
+                                    >🏆</span
+                                >
+                            </div>
+                        </td>
+                        <td class="px-6 py-6 text-gray-900 font-black italic"
+                            >MetLife Stadium</td
+                        >
+                        <td class="px-6 py-6 text-gray-500 italic font-bold"
+                            >New Jersey, USA</td
+                        >
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NEW STANDINGS SECTION -->
+        <div class="mt-24 mb-16 text-center">
+            <h2
+                class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-4"
+            >
+                Fase de <span class="text-blue-600">Grupos</span>
+            </h2>
+            <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+                Sigue el progreso de las 48 selecciones en las tablas de
+                posiciones oficiales.
+            </p>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        >
+            {
+                groups.map((group) => (
+                    <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <span class="w-2 h-6 bg-blue-600 rounded-full" />
+                            {group.name}
+                        </h3>
+                        <div class="overflow-hidden">
+                            <table class="w-full text-[10px] sm:text-xs text-left">
+                                <thead class="text-gray-400 uppercase font-black">
+                                    <tr>
+                                        <th class="pb-2">#</th>
+                                        <th class="pb-2">Team</th>
+                                        <th class="pb-2 text-center">PJ</th>
+                                        <th class="pb-2 text-center">G</th>
+                                        <th class="pb-2 text-center">Pts</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-100">
+                                    {group.teams.map((team, index) => (
+                                        <tr class="hover:bg-gray-50 transition-colors">
+                                            <td class="py-2 font-bold text-gray-300">
+                                                {index + 1}
+                                            </td>
+                                            <td class="py-2 font-black text-gray-900 uppercase">
+                                                {team}
+                                            </td>
+                                            <td class="py-2 text-center text-gray-500">
+                                                0
+                                            </td>
+                                            <td class="py-2 text-center text-gray-500">
+                                                0
+                                            </td>
+                                            <td class="py-2 text-center font-black text-blue-600">
+                                                0
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        animation: slideUp 0.8s ease-out forwards;
+    }
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

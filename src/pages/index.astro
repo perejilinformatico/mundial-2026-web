@@ -1,0 +1,63 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Sedes from "../components/Sedes.astro";
+import Partidos from "../components/Partidos.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+	<head>
+		<!-- SEO Meta Tags -->
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Sigue toda la emoción del Mundial 2026: sedes, equipos clasificados, calendario de partidos y las últimas noticias del torneo más grande del mundo."
+		/>
+		<meta
+			name="keywords"
+			content="Mundial 2026, Copa del Mundo, Fútbol, sedes 2026, calendario mundial, noticias fútbol"
+		/>
+		<meta name="author" content="Santiago Cussit" />
+		<meta name="robots" content="index, follow" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://mundial2026.com/" />
+		<meta
+			property="og:title"
+			content="Mundial 2026 - El Torneo Más Grande de la Historia"
+		/>
+		<meta
+			property="og:description"
+			content="Toda la información actualizada sobre sedes, equipos y calendario de la Copa del Mundo 2026."
+		/>
+		<meta property="og:image" content="/og-image.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://mundial2026.com/" />
+		<meta
+			property="twitter:title"
+			content="Mundial 2026 - El Torneo Más Grande de la Historia"
+		/>
+		<meta
+			property="twitter:description"
+			content="Toda la información actualizada sobre sedes, equipos y calendario de la Copa del Mundo 2026."
+		/>
+		<meta property="twitter:image" content="/og-image.jpg" />
+		<title>Mundial 2026 - Sitio No Oficial de Información</title>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+		></script>
+	</head>
+	<body>
+		<Header />
+		<Hero />
+		<Sedes />
+		<Partidos />
+		<Footer />
+	</body>
+	<script></script>
+</html>
